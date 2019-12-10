@@ -23,7 +23,7 @@ This script matches the supplied arguments with the meta keywords of the files o
 It doesn't matter how many spaces there are between individual keywords; they should just be **comma-separated**.
 
 # Exclude resources from search
-Just put the relative URLs of the files that you do not want to appear in the search results (one per line) in the file **`ignore`**.
+Just put the relative URLs of the files that you do not want to appear in the search results (one per line) in the file **`ignore`**. You can also omit an entire folder by putting its relative URL.
 
 # Code quality & intended usage
 The code is **not at all** optimized for large number of files. It's a simple script that you can implement on your personal blog. I wrote this code as a past time activity. It works for sure but is definitely not the best.
