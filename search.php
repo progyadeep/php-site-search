@@ -44,7 +44,7 @@
 		$score = 0;
 			foreach($q_words as $q){
 			if(in_array($q, $kw)){
-					$score++;
+				$score++;
 			}
 		}
 		if($score > 0)
