@@ -6,7 +6,7 @@
 	$search_index = array_diff(scandir(getcwd()), [".", ".."]);
 	$search_index = array_diff($search_index, $ignore_list);
 	
-	//finding out sub-folders in root directory
+	//finding out folders in root directory
 	$sub = [];
 	
 	foreach($search_index as $s){
