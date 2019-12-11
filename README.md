@@ -2,7 +2,7 @@
 A PHP script that searches your entire (PHP) website based on keywords and outputs relative URLs of appropriate pages along with their search score in a JSON array.
 
 # Algo....um....the logic
-It builds a list of all the files (yes, ALL THE FILES!) available in your website directory - even the ones inside sub-folders, sub-sub-folders and even **.hidden** folders and **.hidden** files themselves - excluding the ones you choose to <a href="#exclude-resources-from-search">exclude from the search</a>.
+It builds a list of all the files (yes, ALL THE FILES!) available in your website directory - even the ones inside sub-folders, sub-sub-folders and even **.hidden** folders and **.hidden** files themselves - excluding the ones you choose to <a href="#exclude-resources-from-search">exclude from the search</a> - and then reads the meta keywords from the files and matches them with the queried keywords.
 
 # Input/arguments to the script
 Individual keywords. Comma separated, trimmed. For example:  
