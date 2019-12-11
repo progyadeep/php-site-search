@@ -17,7 +17,7 @@ The following JSON array is returned:
       "path/to/local/file2":"search-score"
     }
     
-where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases.  
+where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases. It does not contain any element with score less than 1.  
 
 In case of 0 (zero) search results, it will return an empty JSON array like so:  
 
