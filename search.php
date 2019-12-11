@@ -29,7 +29,7 @@
 				if(is_dir($s."/".$t))
 					array_push($sub, $s."/".$t); //it's a folder
 				else
-					$score = calcScore($s."/".$t); //it's a file!
+					calcScore($s."/".$t); //it's a file!
 			}
 		}
 		unset($sub[$i]);
