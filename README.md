@@ -17,7 +17,7 @@ The following JSON array is returned:
 where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases.
 
 # What keywords!?
-This script matches the supplied arguments with the meta keywords of the files on your website, i.e., the keywords you specify in the HTML meta tags like so:  
+This script matches the supplied arguments with the meta keywords of the pages of your website, i.e., the keywords you specify in the HTML meta tags of the files like so:  
 
     <meta name="keywords" content="k1,k2, k3,k4"/>
 It doesn't matter how many spaces there are between individual keywords; they should just be **comma-separated**.
@@ -29,4 +29,4 @@ Just put the relative URLs of the files that you do not want to appear in the se
 The code is **not at all** optimized for large number of files. It's a simple script that you can implement on your personal blog. I wrote this code as a past time activity. It works for sure but is definitely not the best.
 
 # License
-Use it as you want. Modifications are welcome.
+Use it as you want. Modifications are welcome. See license details in <a href="https://github.com/progyadeep/php-site-search/blob/master/LICENSE">LICENSE</a>.
