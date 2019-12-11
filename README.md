@@ -4,6 +4,9 @@ A PHP script that searches your entire (PHP) website based on keywords and outpu
 # Algo....um....the logic
 It builds a list of all the files (yes, ALL THE FILES!) available in your website directory - even the ones inside sub-folders, sub-sub-folders and even **.hidden** folders and **.hidden** files themselves - excluding the ones you choose to <a href="#exclude-resources-from-search">exclude from the search</a>.
 
+# Limitations
+The script looks for exact word matches. That means, **"car"** and **"cars"** won't match with each other. To overcome this, you need toput both the words in the list of **meta keywords**. Sorry.
+
 # Input/arguments to the script
 Individual keywords. Comma separated, trimmed. For example:  
 
