@@ -4,9 +4,6 @@ A PHP script that searches your entire (PHP) website based on keywords and outpu
 # Algo....um....the logic
 It builds a list of all the files (yes, ALL THE FILES!) available in your website directory - even the ones inside sub-folders, sub-sub-folders and even **.hidden** folders and **.hidden** files themselves - excluding the ones you choose to <a href="#exclude-resources-from-search">exclude from the search</a>.
 
-# Limitations
-The script looks for exact word matches. That means, **"car"** and **"cars"** won't match with each other. To overcome this, you need toput both the words in the list of **meta keywords**. Sorry.
-
 # Input/arguments to the script
 Individual keywords. Comma separated, trimmed. For example:  
 
@@ -32,7 +29,7 @@ It doesn't matter how many spaces there are between individual keywords; they sh
 Just put the relative URLs of the files that you do not want to appear in the search results (one per line) in the file **`ignore`**. You can also omit an entire folder by putting its relative URL.
 
 # Code quality & intended usage
-The code is **not at all** optimized for large number of files. It's a simple script that you can implement on your personal blog. I wrote this code as a past time activity. It works for sure but is definitely not the best.
+The code is **not at all** optimized for large number of files. It's a simple script that you can implement on your personal blog. I wrote this code as a past time activity. It works for sure but is definitely not the best (Complexity: O(n<sup>3</sup>)).
 
 # License
 Use it as you want. Modifications are welcome. See license details in <a href="https://github.com/progyadeep/php-site-search/blob/master/LICENSE">LICENSE</a>.
