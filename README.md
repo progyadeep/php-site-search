@@ -17,7 +17,10 @@ The following JSON array is returned:
       "path/to/local/file2":"search-score"
     }
     
-where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases.
+where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases.  
+
+In case of 0 (zero) search results, it will return an empty JSON array like so:  
+    {}
 
 # What keywords!?
 This script matches the supplied arguments with the meta keywords of the pages of your website, i.e., the keywords you specify in the HTML meta tags of the files like so:  
