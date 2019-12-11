@@ -1,6 +1,9 @@
 # PHP Site Search
 A PHP script that searches your entire (PHP) website based on keywords and outputs relative URLs of appropriate pages along with their search score in a JSON array.
 
+# Algo....um....the logic
+It builds a list of all the files (yes, ALL THE FILES!) available in your website directory - even the ones inside sub-folders, sub-sub-folders and even **.hidden** folders and **.hidden** files themselves - excluding the ones you choose to <a href="#exclude-resources-from-search">exclude from the search</a>.
+
 # Input/arguments to the script
 Individual keywords. Comma separated, trimmed. For example:  
 
@@ -11,7 +14,7 @@ The following JSON array is returned:
 
     {
       "path/to/local/file1":"search-score",
-      "path/to/local/file/2":"search-score"
+      "path/to/local/file2":"search-score"
     }
     
 where `search-score` is an integer. The array is **sorted in decreasing order of search scores**. That means, the first result is the most relevant and the relevance decreases as the array index increases.
